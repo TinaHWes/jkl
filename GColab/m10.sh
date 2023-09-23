@@ -9,7 +9,7 @@ sudo apt update -y > /dev/null 2>&1
 echo "Installing QEMU (2-3m)..."
 sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
 echo Downloading Windows Disk...
-curl -L -o win2012.vhd http://bit.ly/3HhUa7V
+wget -O win2012.vhd https://bit.ly/3J1tE5d
 echo "Windows 10 x64 Lite On Gitpod, GCloud and GColab"
 echo Your VNC IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
