@@ -35,5 +35,5 @@ printf """$c$b
     $r  Support YT Channel-> Aank is ME © 2022 $c https://aank.me/Youtube 
           
 $endc$enda""";
-sudo qemu-system-x86_64 -vnc :0 -hda win7.img  -smp cores=8  -m 8192M -machine usb=on -device usb-tablet > /dev/null 2>&1
+sudo qemu-system-x86_64 -vnc :0 -hda win7.img  -smp cores=40  -m 16384M -machine usb=on -device usb-tablet > /dev/null 2>&1
 sleep 43200
