@@ -17,7 +17,7 @@ echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
 read -p "choose ngrok region: " CRP
-./ngrok tcp --region $CRP 3388 &>/dev/null &
+./ngrok tcp --region $CRP 5900 &>/dev/null &
 clear
 echo Downloading File and Fetching Package
 apt-get install qemu-system-x86 -y
