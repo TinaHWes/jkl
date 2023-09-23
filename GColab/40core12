@@ -3,11 +3,9 @@
 apt-get update
 rm -rf w2012 w2012.img w2012.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
-wget -O w2012.gz https://bit.ly/akuhnetW10x64
-gunzip w2012.gz
+wget -O w2012 https://bit.ly/akuhnetW10x64
 echo "Wait..."
 echo "I m Working Now.."
-mv w2012 w2012.img
 wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
@@ -30,7 +28,7 @@ apt-get install qemu-system-x86 -y
 echo "Wait..."
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "Starting Windows"
-qemu-system-x86_64 -vnc :0 -hda w2012.img -m 8G -smp cores=40 -machine usb=on -device usb-tablet > /dev/null 2>&1
+qemu-system-x86_64 -vnc :0 -hda w2012 -m 8G -smp cores=40 -machine usb=on -device usb-tablet > /dev/null 2>&1
 clear
 echo RDP Address:
 echo "===================================="
