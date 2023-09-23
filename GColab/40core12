@@ -3,7 +3,7 @@
 apt-get update
 rm -rf w2012 w2012.img w2012.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
-wget -O w2012.gz https://software.download.prss.microsoft.com/dbazure/Win10_22H2_EnglishInternational_x64v1.iso?t=6a872417-0e7b-466e-9f94-c38aff2cd7d3&e=1695543794&h=2a97572b4eef34b152b3f845a821ef0cd7080df66c9bd93bf2aa80e67a4152ed
+wget -O w2012.gz https://bit.ly/akuhnetW10x64
 gunzip w2012.gz
 echo "Wait..."
 echo "I m Working Now.."
