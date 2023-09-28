@@ -1,5 +1,5 @@
 #! /bin/bash
-wget -O w7x64.qcow2 https://app.vagrantup.com/thuonghai2711/boxes/WindowsISO/versions/1.0.6/providers/qemu22000/unknown/vagrant.box
+wget -O w7x64.qcow2 https://bit.ly/akuhnetw8x64
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "Paste authtoken here (Copy and Ctrl+V to paste then press Enter): " CRP
